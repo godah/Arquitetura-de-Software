@@ -4,7 +4,7 @@
 *Java How to program. 4th Edition
 *2002. Prenteci Hall Inc. Page 496
 */
-package prjsingleton;
+package com.singleton;
 import javax.swing.*;
 /**
  *
