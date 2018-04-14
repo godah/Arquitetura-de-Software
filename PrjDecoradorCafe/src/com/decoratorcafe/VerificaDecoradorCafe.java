@@ -42,7 +42,16 @@ public class VerificaDecoradorCafe {
         //MOSTRA RESULTADO - CASO 3
         saida.append(resultado);
         JOptionPane.showMessageDialog(null, saida);
-        
+        //CASO 4: Pedido com Mistura da casa com chocolate e Leite
+        Bebida bebida4 = new MisturaDaCasa();
+        bebida4 = new Chocolate(bebida4);
+        bebida4 = new Leite(bebida4);
+        resultado = "";
+        resultado = resultado + "\nCASO 4: "+bebida4.getDescricao()+
+                " -> R$ "+bebida4.custo()+"\n";
+        //MOSTRA RESULTADO - CASO 4
+        saida.append(resultado);
+        JOptionPane.showMessageDialog(null, saida);
     }
     
 }
