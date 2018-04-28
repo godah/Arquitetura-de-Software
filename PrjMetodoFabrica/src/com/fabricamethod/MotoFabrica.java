@@ -11,6 +11,9 @@ package com.fabricamethod;
  */
 public class MotoFabrica {
     public static Moto getMoto(String tipoMoto){
+        if(tipoMoto == null)
+            System.exit(0);
+        
         if (tipoMoto.equalsIgnoreCase("Suzuki"))
             return new Suzuki();
         else if(tipoMoto.equalsIgnoreCase("Yamaha"))
