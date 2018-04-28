@@ -21,13 +21,21 @@ public class AdaptadorLocutorAmericano implements PessoaBrasileira{
     @Override
     public void falarPortugues() {
         JOptionPane.showMessageDialog(null, "Portugues Adaptado!");
-        objAmericano.falarIngles();
+        try{
+            objAmericano.falarIngles();
+        }catch(Exception e){
+            
+        }
     }
 
     @Override
     public void trabalhar() {
         for (int i = 0; i < 3; i++) {
-            objAmericano.trabalhar();
+            try{
+                objAmericano.trabalhar();
+            }catch(Exception e){
+                
+            }
         }
     }
     
