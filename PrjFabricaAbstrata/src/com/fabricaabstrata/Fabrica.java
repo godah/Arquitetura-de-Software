@@ -15,6 +15,9 @@ public abstract class Fabrica {
     public abstract Moto getMoto(String marca);
     
     public static Fabrica getInstance(String fabrica){
+        if(fabrica == null)
+            System.exit(0);
+        
         if(fabrica.equalsIgnoreCase("Honda")){
             return new Honda();
         }else if(fabrica.equalsIgnoreCase("Yamaha")){
